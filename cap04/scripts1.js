@@ -14,7 +14,6 @@ function AlumnoController($scope) {
     }, {
     	nombre:'Ana Mariño', 
     	telefono: '6677889900',
-    	curso: 'Primero ESO',
-    }
+    	curso: 'Tercero ESO',
     }]
 }
