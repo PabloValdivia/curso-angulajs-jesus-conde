@@ -1,13 +1,20 @@
 <!doctype html>
-<html lang="es">
+<html ng-app lang="es">
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="" />
-    <title>Modelo en Scope</title>
+    <title>Cuaderno Alumnos</title>
 </head>
-<body ng-app ng-controller="AlumnoController">
-   {{alumno.nombre}} estudia {{alumno.curso}}
-   <script src="angular.min.js"></script>
-   <script src="AlumnoController.js"></script>
+<body ng-controller="AlumnoController">
+    <h1>Cuaderno Alumnos</h1>
+    <div>
+        <div ng-repeat="alumno in alumnos">
+            <div>{{alumno.nombre}} - {{alumno.telefono}}</div>
+            <span>{{alumno.curso}}</span>
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="scripts1.js"></script>
 </body>
 </html>
