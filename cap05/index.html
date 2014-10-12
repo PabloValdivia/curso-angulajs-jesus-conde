@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cuaderno Alumnos</title>
+</head>
+<body ng-controller="AlumnoController">
+    <h1>Cuaderno Alumnos</h1>
+    <div class="wrapper">
+        <div class="contact-item" ng-repeat="alumno in alumnos | orderBy:'curso'">
+            <div class="nombre">{{alumno.nombre}} - {{alumno.telefono}}</div>
+            <span class="curso">{{alumno.curso}}</span>
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="scripts1.js"></script>
+</body>
+</html>
