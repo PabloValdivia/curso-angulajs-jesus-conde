@@ -3,18 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="" />
-    <script src="angular.min.js"></script>
-    <script>
-        function AlumnoController($scope) {
-        	$scope.alumno = {
-        		nombre: 'Juan Blanco',
-        		curso: '3º ESO'
-        	}
-        }
-    </script>
     <title>Modelo en Scope</title>
 </head>
 <body ng-app ng-controller="AlumnoController">
    {{alumno.nombre}} estudia {{alumno.curso}}
+   <script src="angular.min.js"></script>
+   <script src="AlumnoController.js"></script>
 </body>
 </html>
